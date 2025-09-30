@@ -19,7 +19,7 @@ def copy_file_replacing(input_filename, output_filename, conditional_prefix="|Y6
                     output.write(line.strip(NEWLINE) + NEWLINE)
 
 def print_file(filename):
-    with open(filename, READMODE, encoding=ENCODING, newline=NEWLINE) as file:
+    with open(filename, READMODE, encoding=ENCODING, newline=NEWLINE):
         print(get_lines(filename))
 
 def print_when_starts_with(filename, prefix="|Y601|"):
